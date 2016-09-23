@@ -241,6 +241,7 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 168ms (Views: 146.9ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 10.0.2.2 at 2016-08-22 05:48:07 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by StaticPagesController#home as HTML
@@ -502,6 +503,47 @@ Completed 200 OK in 212ms (Views: 201.8ms | ActiveRecord: 0.0ms)
 ActionController::RoutingError (No route matches [GET] "/assets/images/kyousitu1.jpg"):
   
 actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+=======
+Started GET "/" for 10.0.2.2 at 2016-08-22 05:43:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1454ms (Views: 1406.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-08-22 05:43:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 254ms (Views: 214.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-31 11:55:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
 web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
 web-console (3.3.1) lib/web_console/middleware.rb:20:in `block in call'
 web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
@@ -513,12 +555,16 @@ activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagge
 activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
 activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
 railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
 activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
 activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
 activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
 activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
 sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+=======
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
 actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
 rack (2.0.1) lib/rack/method_override.rb:22:in `call'
 rack (2.0.1) lib/rack/runtime.rb:22:in `call'
@@ -532,6 +578,7 @@ puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
 puma (3.6.0) lib/puma/server.rb:415:in `process_client'
 puma (3.6.0) lib/puma/server.rb:275:in `block in run'
 puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 10.0.2.2 at 2016-08-28 19:05:14 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by StaticPagesController#home as HTML
@@ -542,10 +589,45 @@ Completed 200 OK in 138ms (Views: 125.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 10.0.2.2 at 2016-08-28 19:05:30 +0000
+=======
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.0ms)
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateInquiries (20160825010213)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "inquiries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160825010213"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (21.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-08-31 11:55:52 UTC], ["updated_at", 2016-08-31 11:55:52 UTC]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 10.0.2.2 at 2016-08-31 11:56:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 6901ms (Views: 6873.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-31 11:56:15 +0000
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+<<<<<<< HEAD
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 136ms (Views: 124.2ms | ActiveRecord: 0.0ms)
 
@@ -560,19 +642,35 @@ Completed 200 OK in 133ms (Views: 122.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 10.0.2.2 at 2016-08-28 19:06:52 +0000
+=======
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 220ms (Views: 201.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-31 11:56:24 +0000
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+<<<<<<< HEAD
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 225ms (Views: 214.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 10.0.2.2 at 2016-08-28 19:11:19 +0000
+=======
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 318ms (Views: 271.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-31 12:16:32 +0000
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
   Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+<<<<<<< HEAD
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 341ms (Views: 330.4ms | ActiveRecord: 0.0ms)
 
@@ -3736,10 +3834,344 @@ Completed 200 OK in 241ms (Views: 226.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 10.0.2.2 at 2016-09-10 16:36:16 +0000
+=======
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 243ms (Views: 224.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:16:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (31.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 301ms (Views: 261.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:20:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2923ms (Views: 2920.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:22:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 321ms (Views: 320.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:22:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 3153ms (Views: 3152.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:26:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2976ms (Views: 2975.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:26:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 2681ms (Views: 2679.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:28:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2812ms (Views: 2811.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:29:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2824ms (Views: 2823.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:29:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 176ms (Views: 174.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:30:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 3238ms (Views: 3237.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:30:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 213ms (Views: 210.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-08-31 12:31:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+Completed 200 OK in 324ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:31:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2478ms (Views: 2477.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:33:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 8887ms (Views: 8837.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-08-31 12:34:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 392ms (Views: 390.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-01 12:18:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1906ms (Views: 1876.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-01 12:18:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 266ms (Views: 249.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-14 02:20:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2016-09-14 02:20:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.9ms)
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 2875ms (Views: 2822.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 2895ms (Views: 2841.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-14 02:24:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (59.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 1751ms (Views: 1682.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-14 02:58:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1854ms (Views: 1853.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-14 02:59:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 213ms (Views: 211.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-14 03:05:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 3527ms (Views: 3526.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-14 03:05:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 204ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-14 03:07:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2926ms (Views: 2924.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-14 03:07:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b9yKEhvHdAR/e3Wk7JpjzO2ok8H5ShpSkw5O/XdbTFRCfy8vmxnEnbQNw+p7eHrH5bk5z3qKTIcFqK6h20asEw==", "inquiry"=>{"name"=>"aaaaa", "email"=>"aaaa@email.com", "message"=>"wwwww"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.7ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-15 05:46:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b9yKEhvHdAR/e3Wk7JpjzO2ok8H5ShpSkw5O/XdbTFRCfy8vmxnEnbQNw+p7eHrH5bk5z3qKTIcFqK6h20asEw==", "inquiry"=>{"name"=>"aaaaa", "email"=>"aaaa@email.com", "message"=>"wwwww"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 3.8ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.4ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+Started GET "/" for 10.0.2.2 at 2016-09-16 08:06:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2950ms (Views: 2916.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-16 08:06:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (58.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 362ms (Views: 300.2ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-16 08:10:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvXx8vZBr8cytcwGN2yHel2Dw1sZ8gikzxye6o6wtTAKbLKJIW1IH3Jrnd2g96wc51FBZlvPc5E8RZUFuDmcIg==", "inquiry"=>{"name"=>"栗崎　遼平", "email"=>"aa@email.com", "message"=>"aaaa"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-16 08:57:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (50.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1618ms (Views: 1558.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-16 08:57:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 327ms (Views: 298.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-16 09:06:19 +0000
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
   Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+<<<<<<< HEAD
   Rendered layouts/_header.html.erb (0.8ms)
 Completed 200 OK in 232ms (Views: 221.4ms | ActiveRecord: 0.0ms)
 
@@ -3772,10 +4204,45 @@ Completed 200 OK in 221ms (Views: 211.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/" for 10.0.2.2 at 2016-09-10 16:43:19 +0000
+=======
+  Rendered layouts/_header.html.erb (5.5ms)
+Completed 200 OK in 268ms (Views: 236.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-16 09:06:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 335ms (Views: 306.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-16 09:44:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 342ms (Views: 301.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-16 09:44:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 311ms (Views: 309.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-16 10:26:39 +0000
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by StaticPagesController#home as HTML
   Rendering static_pages/home.html.erb within layouts/application
   Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+<<<<<<< HEAD
   Rendered layouts/_header.html.erb (1.4ms)
 Completed 200 OK in 226ms (Views: 215.8ms | ActiveRecord: 0.0ms)
 
@@ -3958,5 +4425,823 @@ Processing by StaticPagesController#home as HTML
   Rendered static_pages/home.html.erb within layouts/application (0.4ms)
   Rendered layouts/_header.html.erb (0.8ms)
 Completed 200 OK in 157ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+=======
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 362ms (Views: 311.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-20 06:29:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 1722ms (Views: 1639.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-20 06:50:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (53.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1535ms (Views: 1475.6ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-20 06:51:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5SrhFBA5zZZOs1rF8BeQfkdMmXzrw8gHi0P9AikbM+zds6JvxxUqTg5tCx5njLsY/Z4bQan+szJ4GvbtH5Ia/g==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error occured"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.6ms)
+  [1m[36mInquiry Load (7.9ms)[0m  [1m[34mSELECT "inquiries".* FROM "inquiries"[0m
+Started GET "/" for 10.0.2.2 at 2016-09-20 07:01:47 +0000
+Started GET "/" for 10.0.2.2 at 2016-09-20 07:01:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2356ms (Views: 2290.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 2312ms (Views: 2285.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-20 07:01:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (37.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 326ms (Views: 277.1ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-20 07:02:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6INKA+O5VKsoWQhakfhdQObQMiXNkhUpyQsSiZY+AArO05T2KICiux/Nfr93MoTuUnC9dULM2FUfSelENHREg==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-20 07:03:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6INKA+O5VKsoWQhakfhdQObQMiXNkhUpyQsSiZY+AArO05T2KICiux/Nfr93MoTuUnC9dULM2FUfSelENHREg==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-20 07:03:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6INKA+O5VKsoWQhakfhdQObQMiXNkhUpyQsSiZY+AArO05T2KICiux/Nfr93MoTuUnC9dULM2FUfSelENHREg==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.1ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-20 07:03:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6INKA+O5VKsoWQhakfhdQObQMiXNkhUpyQsSiZY+AArO05T2KICiux/Nfr93MoTuUnC9dULM2FUfSelENHREg==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.6ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 00:59:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6INKA+O5VKsoWQhakfhdQObQMiXNkhUpyQsSiZY+AArO05T2KICiux/Nfr93MoTuUnC9dULM2FUfSelENHREg==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 3.8ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.7ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.1ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 01:07:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VtObFMHq67Wi10ibElVaHFadtCooowTwabinfY+lkvM+OtR09kbNx3962z7q0xjeUvc3iti2sZXAALBWiN2DA==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.2ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 01:07:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VtObFMHq67Wi10ibElVaHFadtCooowTwabinfY+lkvM+OtR09kbNx3962z7q0xjeUvc3iti2sZXAALBWiN2DA==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/inquiry_controller.rb:8:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.1ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 01:11:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VtObFMHq67Wi10ibElVaHFadtCooowTwabinfY+lkvM+OtR09kbNx3962z7q0xjeUvc3iti2sZXAALBWiN2DA==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 6.9ms)
+
+
+  
+NameError (undefined local variable or method `inquiry' for #<InquiryController:0x0000000393b888>
+Did you mean?  @inquiry):
+  
+app/controllers/inquiry_controller.rb:9:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.5ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 01:12:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VtObFMHq67Wi10ibElVaHFadtCooowTwabinfY+lkvM+OtR09kbNx3962z7q0xjeUvc3iti2sZXAALBWiN2DA==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `inquiry' for #<InquiryController:0x00000005670d40>
+Did you mean?  @inquiry):
+  
+app/controllers/inquiry_controller.rb:9:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.4ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 01:13:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VtObFMHq67Wi10ibElVaHFadtCooowTwabinfY+lkvM+OtR09kbNx3962z7q0xjeUvc3iti2sZXAALBWiN2DA==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+  Rendering inquiry/confirm.html.erb within layouts/application
+  Rendered inquiry/confirm.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 7.4ms)
+
+
+  
+SyntaxError (/vagrant/study-app-web/app/views/inquiry/confirm.html.erb:26: syntax error, unexpected =>
+...end=(f.submit '送信', class=>'btn btn-primary' );@output_b...
+...                               ^):
+  
+app/views/inquiry/confirm.html.erb:26: syntax error, unexpected =>
+app/controllers/inquiry_controller.rb:10:in `confirm'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.9ms)
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 01:18:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VtObFMHq67Wi10ibElVaHFadtCooowTwabinfY+lkvM+OtR09kbNx3962z7q0xjeUvc3iti2sZXAALBWiN2DA==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"確認"}
+  Rendering inquiry/confirm.html.erb within layouts/application
+  Rendered inquiry/confirm.html.erb within layouts/application (67.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1427ms (Views: 1423.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 01:20:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#thanks as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qi/1lgfPnOntkgdUE1e1Cpv6i+nnGRWscxvm2jb8n5ZvjFCrhxEscCbksRqEtawBk+sh52TZQ3nlvQaGmuF/0Q==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"送信"}
+Completed 500 Internal Server Error in 976ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `received_email' for InquiryMailer:Class):
+  
+app/controllers/inquiry_controller.rb:17:in `thanks'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.2ms)
+Started POST "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 01:35:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#thanks as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qi/1lgfPnOntkgdUE1e1Cpv6i+nnGRWscxvm2jb8n5ZvjFCrhxEscCbksRqEtawBk+sh52TZQ3nlvQaGmuF/0Q==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"送信"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `received_email' for InquiryMailer:Class):
+  
+app/controllers/inquiry_controller.rb:17:in `thanks'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.7ms)
+Started POST "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 01:38:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by InquiryController#thanks as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qi/1lgfPnOntkgdUE1e1Cpv6i+nnGRWscxvm2jb8n5ZvjFCrhxEscCbksRqEtawBk+sh52TZQ3nlvQaGmuF/0Q==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"送信"}
+  Rendering inquiry_mailer/recived_email.text.erb
+  Rendered inquiry_mailer/recived_email.text.erb (27.3ms)
+InquiryMailer#recived_email: processed outbound mail in 239.7ms
+Completed 500 Internal Server Error in 1117ms (ActiveRecord: 7.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `massage' for #<Inquiry id: nil, created_at: nil, updated_at: nil>
+Did you mean?  message):
+    5: Email: <%= @inquiry.email %>
+    6: 
+    7: Message:
+    8:  <%= @inquiry. massage%>
+  
+app/views/inquiry_mailer/recived_email.text.erb:8:in `_app_views_inquiry_mailer_recived_email_text_erb___286708170373593655_35654740'
+app/mailers/inquiry_mailer.rb:7:in `recived_email'
+app/controllers/inquiry_controller.rb:17:in `thanks'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.7ms)
+Started POST "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 02:18:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#thanks as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qi/1lgfPnOntkgdUE1e1Cpv6i+nnGRWscxvm2jb8n5ZvjFCrhxEscCbksRqEtawBk+sh52TZQ3nlvQaGmuF/0Q==", "inquiry"=>{"name"=>"sample", "email"=>"sample@email.com", "message"=>"error fixed"}, "commit"=>"送信"}
+  Rendering inquiry_mailer/recived_email.text.erb
+  Rendered inquiry_mailer/recived_email.text.erb (0.4ms)
+InquiryMailer#recived_email: processed outbound mail in 533.4ms
+Sent mail to example@example.com (49.2ms)
+Date: Wed, 21 Sep 2016 02:19:00 +0000
+From: example@example.com
+To: example@example.com
+Message-ID: <57e1ee147374f_f232000f6c97686@vagrant-ubuntu-trusty.mail>
+Subject: =?UTF-8?Q?=E3=81=8A=E5=95=8F=E3=81=84=E5=90=88=E3=82=8F=E3=81=9B=E3=82=92=E6=89=BF=E3=82=8A=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+V2Vi44K144Kk44OI44GL44KJ44GK5ZWP44GE5ZCI44KP44Gb44GM44GC44KK
+44G+44GX44Gf44CCCgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQpOYW1l
+OiBzYW1wbGUKRW1haWw6IHNhbXBsZUBlbWFpbC5jb20KTWVzc2FnZToKZXJy
+b3IgZml4ZWQKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0K
+
+  Rendering inquiry/thanks.html.erb within layouts/application
+  Rendered inquiry/thanks.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 1839ms (Views: 1250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 02:20:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/inquiry/thanks"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (3.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.9ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.7ms)
+Started GET "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 02:21:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/inquiry/thanks"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.7ms)
+Started GET "/inquiry" for 10.0.2.2 at 2016-09-21 02:21:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 258ms (Views: 256.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 02:21:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rhrx7OVZx5/HQklA/IuhIW7nnJM9jJlMyyr0bnxb/C+DuVTRZYd3Bgw0/w5rabgqZvY2nb5Mz5ldjBQy0EYcaA==", "inquiry"=>{"name"=>"あいうえお", "email"=>"aiueo@email.com", "message"=>"あいうえお"}, "commit"=>"確認"}
+  Rendering inquiry/confirm.html.erb within layouts/application
+  Rendered inquiry/confirm.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 390ms (Views: 352.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 02:21:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#thanks as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QlXqZGsuXELp7efxQXAlW5fzwqxt/wOj9cvOQ4e/4o9v9k9Z6/Ds2yKbUb/WkjxQn+Joou4/VXZjbS4fK6ICyA==", "inquiry"=>{"name"=>"あいうえお", "email"=>"aiueo@email.com", "message"=>"あいうえお"}, "commit"=>"送信"}
+  Rendering inquiry_mailer/recived_email.text.erb
+  Rendered inquiry_mailer/recived_email.text.erb (0.5ms)
+InquiryMailer#recived_email: processed outbound mail in 207.9ms
+Sent mail to example@example.com (2.7ms)
+Date: Wed, 21 Sep 2016 02:21:49 +0000
+From: example@example.com
+To: example@example.com
+Message-ID: <57e1eebd86434_f232000f6c977b5@vagrant-ubuntu-trusty.mail>
+Subject: =?UTF-8?Q?=E3=81=8A=E5=95=8F=E3=81=84=E5=90=88=E3=82=8F=E3=81=9B=E3=82=92=E6=89=BF=E3=82=8A=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+V2Vi44K144Kk44OI44GL44KJ44GK5ZWP44GE5ZCI44KP44Gb44GM44GC44KK
+44G+44GX44Gf44CCCgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQpOYW1l
+OiDjgYLjgYTjgYbjgYjjgYoKRW1haWw6IGFpdWVvQGVtYWlsLmNvbQpNZXNz
+YWdlOgrjgYLjgYTjgYbjgYjjgYoKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0K
+
+  Rendering inquiry/thanks.html.erb within layouts/application
+  Rendered inquiry/thanks.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 426ms (Views: 208.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-21 02:22:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 305ms (Views: 302.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 02:22:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SgHHOVPGEgyPqGfsbQQbLDlmpIGJB0cCggncn4RjBQhymIRChOr11M92Njf6nzBKg7QmvMs6PDdxUNdwsuosGg==", "inquiry"=>{"name"=>"あ", "email"=>"wkc1wnr2@gmail.com", "message"=>""}, "commit"=>"確認"}
+  Rendering inquiry/confirm.html.erb within layouts/application
+  Rendered inquiry/confirm.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 245ms (Views: 243.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-21 02:23:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"slQMaNDmwMHSsky1CM2X3FS/eNVFO0/Vex9sYa+weFKf96lVUDhwWBnE+vufL47XXK7S28b7GQDtuYw9A62YFQ==", "inquiry"=>{"name"=>"あ", "email"=>"wkc1wnr2@gmail.com", "message"=>"try"}, "commit"=>"確認"}
+  Rendering inquiry/confirm.html.erb within layouts/application
+  Rendered inquiry/confirm.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 339ms (Views: 336.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/thanks" for 10.0.2.2 at 2016-09-21 02:23:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#thanks as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iGsnrGAYDXWb4zz6qbNyK7ZF3HXMbQsfT+Q0aUhD192lyIKR4Ma97FCVirQ+UWsgvlR2e0+tXcrZQtQ15F43mg==", "inquiry"=>{"name"=>"あ", "email"=>"wkc1wnr2@gmail.com", "message"=>"try"}, "commit"=>"送信"}
+  Rendering inquiry_mailer/recived_email.text.erb
+  Rendered inquiry_mailer/recived_email.text.erb (0.5ms)
+InquiryMailer#recived_email: processed outbound mail in 267.1ms
+Sent mail to example@example.com (11.1ms)
+Date: Wed, 21 Sep 2016 02:23:03 +0000
+From: example@example.com
+To: example@example.com
+Message-ID: <57e1ef076aed2_f232000f6c978c4@vagrant-ubuntu-trusty.mail>
+Subject: =?UTF-8?Q?=E3=81=8A=E5=95=8F=E3=81=84=E5=90=88=E3=82=8F=E3=81=9B=E3=82=92=E6=89=BF=E3=82=8A=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+V2Vi44K144Kk44OI44GL44KJ44GK5ZWP44GE5ZCI44KP44Gb44GM44GC44KK
+44G+44GX44Gf44CCCgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQpOYW1l
+OiDjgYIKRW1haWw6IHdrYzF3bnIyQGdtYWlsLmNvbQpNZXNzYWdlOgp0cnkK
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0K
+
+  Rendering inquiry/thanks.html.erb within layouts/application
+  Rendered inquiry/thanks.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 574ms (Views: 283.8ms | ActiveRecord: 0.0ms)
+>>>>>>> 9d607fa9bec655d8ffc90d97d44450c8f46b9da9
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:53:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 7131ms (Views: 7108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inquiry/index" for 10.0.2.2 at 2016-09-23 04:53:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#index as HTML
+  Rendering inquiry/index.html.erb within layouts/application
+  Rendered inquiry/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 199ms (Views: 173.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/inquiry/confirm" for 10.0.2.2 at 2016-09-23 04:54:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/FDSsxIDWC+XUbJ3jWoEpLRN9C3s5FTGU3LU89sF4SiGmFYvQfn05eMqBxWj0q1bvmz2qDHO61Oc+8ui5Os3TQ==", "inquiry"=>{"name"=>"金子貴裕", "email"=>"takahirokaneko0605@gmail.com", "message"=>"こんにちわ"}, "commit"=>"確認"}
+  Rendering inquiry/confirm.html.erb within layouts/application
+  Rendered inquiry/confirm.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 188ms (Views: 186.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/inquiry/thanks" for 10.0.2.2 at 2016-09-23 04:54:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by InquiryController#thanks as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KlpXvCPfBQh2qixDhKH/EjoHTqM3Dqm7+IYhCxAF9SwZgAl9iiCxkpWahF4P+aKYCq1XA0WtM9kxfACoqqJ/hg==", "inquiry"=>{"name"=>"金子貴裕", "email"=>"takahirokaneko0605@gmail.com", "message"=>"こんにちわ"}, "commit"=>"送信"}
+  Rendering inquiry_mailer/recived_email.text.erb
+  Rendered inquiry_mailer/recived_email.text.erb (0.7ms)
+InquiryMailer#recived_email: processed outbound mail in 363.0ms
+Sent mail to example@example.com (24.2ms)
+Date: Fri, 23 Sep 2016 04:54:26 +0000
+From: example@example.com
+To: example@example.com
+Message-ID: <57e4b582130c7_5b7e24ffd7418980@vagrant-ubuntu-trusty.mail>
+Subject: =?UTF-8?Q?=E3=81=8A=E5=95=8F=E3=81=84=E5=90=88=E3=82=8F=E3=81=9B=E3=82=92=E6=89=BF=E3=82=8A=E3=81=BE=E3=81=97=E3=81=9F?=
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+V2Vi44K144Kk44OI44GL44KJ44GK5ZWP44GE5ZCI44KP44Gb44GM44GC44KK
+44G+44GX44Gf44CCCgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQpOYW1l
+OiDph5HlrZDosrToo5UKRW1haWw6IHRha2FoaXJva2FuZWtvMDYwNUBnbWFp
+bC5jb20KTWVzc2FnZToK44GT44KT44Gr44Gh44KPCi0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tCg==
+
+  Rendering inquiry/thanks.html.erb within layouts/application
+  Rendered inquiry/thanks.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1148ms (Views: 157.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:54:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 163ms (Views: 146.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:54:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 157ms (Views: 144.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:54:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 161ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-23 04:54:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 148ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:54:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 173ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 174ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 187ms (Views: 170.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-23 04:55:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 193ms (Views: 164.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 197ms (Views: 172.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 199ms (Views: 169.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 192ms (Views: 168.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 173ms (Views: 157.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 171ms (Views: 154.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-23 04:55:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 175ms (Views: 160.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-23 04:55:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 168ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 181ms (Views: 152.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 178ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 174ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 174ms (Views: 152.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/step" for 10.0.2.2 at 2016-09-23 04:55:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#step as HTML
+  Rendering static_pages/step.html.erb within layouts/application
+  Rendered static_pages/step.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 184ms (Views: 160.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-09-23 04:55:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 185ms (Views: 157.0ms | ActiveRecord: 0.0ms)
 
 
