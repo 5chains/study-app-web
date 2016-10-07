@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-.clearfix::after{
+/*.clearfix::after{
     content: "";
     clear: both;
     display: block;
@@ -33,7 +33,7 @@ nav{
     width: 30%;
     float: left;
     line-height: 60px;
-    color:orange;
+    
 
 }
 .top-menu{
@@ -42,7 +42,7 @@ nav{
     float: right;
 }
 .sub-title a{
-    color:orange;
+    
     text-decoration:none;
 }
 .sub-title a:hover{
@@ -60,4 +60,4 @@ nav{
 .top-menu-item:hover{
     background-color:#87CEEB;
     opacity:0.4;
-}
+}*/
