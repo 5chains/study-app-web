@@ -136,8 +136,41 @@
   float: left;
   width: 256px;
   height: 385px;
-  background-color: #00FF00;
   margin: 2.5%;
+  background-color:red;
+  
+}
+.lesson-icon1{
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  margin:0px 38px 0px 38px;
+  background-image: url(kokugo2.jpg);
+  background-size: cover;
+  
+}
+.lesson-icon2{
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  margin:0px 38px 0px 38px;
+  background-image: url(syakai1.jpg);
+  background-size: cover;
+  
+}
+.lesson-icon3{
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  margin:0px 38px 0px 38px;
+  background-image: url(rika1.jpg);
+  background-size: cover;
+  
+}
+.lesson-message{
+  width:256px;
+  height:205px;
+  background-color:blue;
 }
 
 @media (max-width:1280px) {
