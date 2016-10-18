@@ -2,16 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
 .clearfix::after{
     content: "";
     clear: both;
     display: block;
 }
+
 header{
     width: 100%;
     position:fixed;
     z-index: 100;
 }
+
 nav{
     width: 90%;
     height: 75px;
@@ -22,29 +25,49 @@ nav{
     width: 30%;
     float: left;
     line-height: 25px;
-    color:#9090b9;
-
+    color:#2ecc71;
+    font-family:'HiraMinProN-W6';
 
 }
+
 .bg{
     background-color:white;
 }
+
 .top-menu{
     width: 70%;
     line-height: 75px;
     float: right;
 }
+
 .sub-title a{
-    color:#9090b9;
-    text-decoration:none;
-    transition: .5s all ease-out;
-    text-decoration: none;
-    opacity: 1.0;
+    position: relative;
+    display: inline-block;
+    transition: #2ecc71.3s;
+    font-family:'arial unicode ms';
 }
+
+.sub-title a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 8px;
+    background-color: #2ecc71;
+    transition: #2ecc71 .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 .sub-title a:hover{
-    text-decoration:none;
-    color:#333333;
+    text-decoration: none;
 }
+
+.sub-title a:hover::after {
+    width: 100%;
+}
+
 .top-menu-item{
     width: 12%;
     float: left;
@@ -54,10 +77,7 @@ nav{
 
 }
 
-.top-menu-item:hover{
-    background-color:#9090b9;
-    opacity:0.5;
-}
+
 
 @media (max-width: 1120px) {
   
@@ -87,7 +107,33 @@ nav{
     z-index: 1000;
 }
 #ham-menu li {
+    position: relative;
+    display:block;
+    transition: .3s;
+    font-family:'arial unicode ms';
     list-style:none;
+    text-decoration: none;
+}
+
+#ham-menu a:hover {
+    text-decoration: none;
+}
+
+#ham-menu a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #2ecc71;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#ham-menu a:hover::after {
+    width: 100%;
 }
 /*メニューアイコン部分は疑似要素で*/
 #ham-menu::before {
@@ -119,6 +165,7 @@ nav{
     width: 100%;
     z-index: -1;
 }
+
 /*hover 時の処理*/
 #ham-menu:hover {
     transform: translate(-165px); /*メニュー横幅①と合わせる*/
