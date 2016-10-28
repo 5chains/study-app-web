@@ -13,7 +13,11 @@ header{
     width: 100%;
     position:fixed;
     z-index: 100;
+    box-shadow: 0 0 0 1px;
+    border:2px solid;
 }
+
+
 
 nav{
     width: 90%;
@@ -21,14 +25,46 @@ nav{
     float: right;
 
 }
-.title{
-    width: 30%;
-    float: left;
-    line-height: 25px;
-    color:#2ecc71;
-    font-family:'HiraMinProN-W6';
 
+
+.top-name{
+    width: 20%;
+    height: 47px;
+    float: left;
+    color:#2ecc71;
+    font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+    border-bottom: 1px solid;
 }
+
+.top-name p{
+    font-size:35px;
+    padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  
+  .top-name{
+     width:25%;
+
+  }
+  
+}
+
+@media (max-width: 500px) {
+  
+  .top-name{
+    height: 45px;
+    width:50%;
+  }
+
+  .top-name p{
+     padding-top: 17px;
+     font-size:27px;
+
+  }
+  
+}
+
 
 .bg{
     background-color:white;
@@ -44,7 +80,7 @@ nav{
     position: relative;
     display: inline-block;
     transition: #2ecc71.3s;
-    font-family:'arial unicode ms';
+    font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
 }
 
 .sub-title a::after {
@@ -53,7 +89,7 @@ nav{
     left: 50%;
     content: '';
     width: 0;
-    height: 8px;
+    height: 5px;
     background-color: #2ecc71;
     transition: #2ecc71 .3s;
     -webkit-transform: translateX(-50%);
@@ -98,19 +134,20 @@ nav{
     background-color: #fff; /*メニュー背景色*/
     box-sizing: border-box;
     height: 100%;
-    padding: 10px 40px; /*メニュー内部上下左右余白*/
+    padding: 10px 30px 40px 30px; /*メニュー内部上下左右余白*/
     position: fixed;
     right: -165px; /*メニュー横幅①と合わせる*/
     top: 0;
     transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
     width: 165px; /*メニュー横幅①*/
     z-index: 1000;
+    font-size: 13px;
 }
 #ham-menu li {
     position: relative;
     display:block;
     transition: .3s;
-    font-family:'arial unicode ms';
+    font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
     list-style:none;
     text-decoration: none;
 }
@@ -122,7 +159,7 @@ nav{
 #ham-menu a::after {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 40%;
     content: '';
     width: 0;
     height: 1px;
@@ -137,19 +174,20 @@ nav{
 }
 /*メニューアイコン部分は疑似要素で*/
 #ham-menu::before {
-    background-color: #fff; /*ボタン部分背景色*/
+ /*ボタン部分背景色*/
     border-radius: 0 0 0 10px; /*左下角丸*/
     color: #333; /*アイコン（フォント）色*/
     content: "≡"; /*メニューアイコン*/
     display: block;
     font-size: 50px; /*アイコン（フォント）サイズ*/
     height: 50px;
-    line-height: 50px; /*縦位置中央化*/
+    line-height: 54px; /*縦位置中央化*/
     position: absolute;
     right: 100%;
     text-align: center;
     top: 0;
     width: 50px;
+    padding: 10px 10px 0px 0px;
 }
 
 /*透過背景部分*/

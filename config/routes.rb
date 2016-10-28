@@ -8,4 +8,5 @@ Rails.application.routes.draw do
    post 'inquiry/confirm' => 'inquiry#confirm'
    post 'inquiry/thanks' => 'inquiry#thanks'
    get 'vision' => 'static_pages#vision'
+   get 'members' => 'static_pages#members'
 end

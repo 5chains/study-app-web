@@ -1,27 +1,15 @@
 .top-area{
   width:100%;
-  height:800px;
-
+  height:710px;
+  background-image: url(kyousitu2.png);
+  background-size: cover;
 }
 
-
-.slideshow {
-  position: relative;
-  width: 100%; /* 画像の横幅 */
-  height: 500px; /* 画像の縦幅 */
-}
-
-.slideshow img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: 1s; /* フェードの時間(秒) */
-}
-
-.slideshow .show {
-  opacity: 1;
-  z-index: 1;
+@media (max-width: 500px) {
+  
+  .top-area{
+    height: 650px;
+  }
 }
 
 .top-wrapper {
@@ -30,7 +18,6 @@
   padding: 200px 0px 0px 0px;
   color: #99FFFF;
   text-align: center;
-  background: rgba(45,45,45, 0.4);
 }
 
 @media (max-width: 800px) {
@@ -74,7 +61,8 @@
   font-size: 55px;
   letter-spacing: 5px;
   opacity:1;
-  font-family:'Tahoma';
+  font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
 }
 
 @media (max-width: 1000px) {
@@ -96,7 +84,7 @@
   margin-top: 50px;
   opacity: 0.95;
   font-size: 19px;
-  font-family:'Tahoma';
+  font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
 }
 
 @media (max-width: 1000px) {
@@ -122,120 +110,289 @@
 
 .exlpain{
   width:100%;
-  height:1600px;
+  height:1250px;
 }
 
 .explain-head{
   width:100%;
-  height:300px;
+  height:275px;
 }
 
 .explain-head h1{
   text-align:center;
+  font-family: "AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  padding-top: 65px;
+}
+
+@media (max-width: 500px) {
+  
+  .explain-head h1{
+    font-size:27px;
+  }
 }
 
 .explain-head h2{
   text-align:center;
+  font-family: "AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  padding-top: 10px;
 }
 
-.explain-head p{
+@media (max-width: 500px) {
+  
+  .explain-head h2{
+    font-size:20px;
+  }
+}
+
+.explain-head h3{
   text-align:center;
+  font-family: "AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  padding-top: 40px;
+}
+
+@media (max-width: 500px) {
+  
+  .explain-head h3{
+    font-size:18px;
+  }
 }
 
 .explain-center{
   width:100%;
-  height:700px;
- 
+  height:500px;
 }
+
+
+@media (max-width: 500px) {
+  
+  .explain-center{
+    height:1000px;
+  }
+}
+
 
 .explain-center-area{
   float:left;
-  width:290px;
-  height:660px;
-  margin:2.4%;
+  width:225px;
+  height:425px;
+  margin:1.5% 13% 1.5% 13%;
+}
+
+@media (max-width: 1000px) {
   
+  .explain-center-area{
+    margin:1.5% 10.5% 1.5% 10.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .explain-center-area{
+    margin:14%;
+  }
 }
 
 .explain-center-icon1{
-  width:290px;
-  height:660px;
+  width:225px;
+  height:425px;
   background-image: url(iphone3.jpeg);
   background-size: cover;
   
 }
 
 .explain-center-icon2{
-  width:290px;
-  height:660px;
+  width:225px;
+  height:425px;
   background-image: url(iphone3.jpeg);
   background-size: cover;
   
 }
 
-.explain-center-icon3{
-  width:290px;
-  height:660px;
-  background-image: url(iphone3.jpeg);
-  background-size: cover;
-  
-}
+
 
 .explain-zone{
+  margin-top:25px; 
   width:100%;
-  height:550px;
-
+  height:550px; 
 }
-.explain-area{
+
+@media (max-width: 1000px) {
+  
+  .explain-zone{
+    height:1200px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .explain-zone{
+    height:2400px;
+  }
+}
+
+.explain-area1{
   text-align:center;
   float: left;
-  width:256px;
+  width:300px;
   height:420px;
-  margin:4%;
+  margin:1.8%;
+}
+
+.explain-area2{
+  text-align:center;
+  float: left;
+  width:300px;
+  height:420px;
+  margin:1.8%;
+  border-right: 1px solid #DDDDDD;
+  border-left:1px solid #DDDDDD;
+}
+
+@media (max-width: 1000px) {
+  
+  .explain-area2{
+    border:none;
+  }
+}
+
+.explain-area3{
+  text-align:center;
+  float: left;
+  width:300px;
+  height:420px;
+  margin:1.8%;
+}
+
+@media (max-width: 1000px) {
+  
+  .explain-area1{
+    margin:0%;
+    width:100%;
+  }
+  .explain-area2{
+    margin:0%;
+    width:100%;
+  }
+  .explain-area3{
+    margin:0%;
+    width:100%;
+  }
 }
 
 .explain-icon1{
   text-align: center;
-  width: 180px;
+  width: 200px;
   height: 180px;
-  margin:0px 38px 0px 38px;
-  background-image: url(iconex1.png);
+  margin:0px 30px 0px 30px;
+  background-image: url(question6.jpg);
   background-size: cover;
+}
+
+@media (max-width: 1000px) {
   
+  .explain-icon1{
+    margin:0px 0px 0px 290px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .explain-icon1{
+    margin:0px 0px 0px 55px;
+  }
 }
 
 .explain-icon2{
   text-align: center;
-  width: 180px;
+  width: 200px;
   height: 180px;
-  margin:0px 38px 0px 38px;
-  background-image: url(iconex1.png);
-  background-size: cover;
+  margin:0px 30px 0px 30px;
+  background-image: url(fukidasi2.jpg);
+  background-size: cover; 
+}
+
+@media (max-width: 1000px) {
   
+  .explain-icon2{
+    margin:0px 0px 0px 280px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .explain-icon2{
+    margin:0px 0px 0px 45px;
+  }
 }
 
 .explain-icon3{
   text-align: center;
-  width: 180px;
+  width: 200px;
   height: 180px;
-  margin:0px 38px 0px 38px;
-  background-image: url(iconex1.png);
+  margin:0px 30px 0px 30px;
+  background-image: url(yazirushi2.jpg);
   background-size: cover;
-  
 }
 
+@media (max-width: 1000px) {
+  
+  .explain-icon3{
+    margin:0px 0px 0px 280px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .explain-icon3{
+    margin:0px 0px 0px 45px;
+  }
+}
 
 .explain-coment{
   width:256px;
   height:240px;
-  background-color:#336666;
   padding-top:30px;
+  margin-left: 20px
+}
+
+.explain-coment p{
+  letter-spacing: 0.5em;
+}
+
+@media (max-width: 1000px) {
+  
+  .explain-coment{
+    padding:75px 140px 0px 120px;
+    width:100%;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .explain-coment{
+    padding:30px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+  }
 }
 
 .lesson-wrapper {
   width: 100%;
-  height:1600px;
+  height:1100px;
 }
 
+@media (max-width: 1000px) {
+  
+  .lesson-wrapper{
+    height:2300px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .lesson-wrapper{
+    height:4400px;
+  }
+}
 
 .lesson-head {
   width: 100%;
@@ -243,37 +400,89 @@
   margin-top:30px;
 }
 
+@media (max-width: 1000px) {
+  
+  .lesson-head{
+    height:170px;
+    margin-top:50px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .lesson-head{
+    height:300px;
+    margin-top:50px;
+  }
+}
 
 .lesson-head p {
   text-align: center;
-  font-size: 30px;
-  font-family:'arial unicode ms';
-  font-color:#339900;
+  font-size: 25px;
+  font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  color:#808080;
+  padding-top: 70px;
 }
 
 .lessons{
   width: 100%;
-  height: 1600px;
+  height: 1200px;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  
+  .lessons{
+    height:2300px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .lessons{
+    height:4400px;
+  }
 }
 
 .lesson{
   text-align: center;
   float: left;
-  width: 300px;
+  width: 290px;
   height: 400px;
-  margin:6% 2% 6% 2%;
+  margin:4% 2.2% 4% 2.2%;
+  border:2px solid;
+  border-color:#CCCCCC;
+  border-radius: 3%;
+　box-shadow: 0 0 0 2px;
+ 
+}
+
+
+@media (max-width: 1000px) {
   
+  .lesson{
+    margin:8% 6.5% 8% 6.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .lesson{
+    margin:30% 2.8% 12% 2.8%;
+  }
 }
 
 .lesson-title{
+  text-align: center;
   width: 300px;
-  padding:5px 0px 0px 0px;
+  padding:40px 0px 0px 0px;
 }
 
 .lesson-title p{
-  font-size:22px;
-  font-family:'arial unicode ms';
+  text-align: center;
+  font-size:25px;
+  font-family: "AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  color:#666666;
 }
 
 .lesson-icon1{
@@ -338,34 +547,48 @@
 
 
 .lesson-message{
-  width:300px;
+  width:290px;
   height:220px;
-  background-color:#CC3366;
   padding-top:30px;
 }
 
 .lesson-message p{
-  font-family:'arial unicode ms';
-  font-size:13px;
-  font-color:#888888;
+  font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  font-size:16px;
+  color:#808080;
 }
 
 
 
 
 .message-head h3 {
-  font-family:'arial unicode ms';
+  font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  color:#808080;
 }
 
 .message-head h2 {
-  font-family:'arial unicode ms';
+  font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+  color:#808080;
+}
+
+@media (max-width: 500px) {
+  
+  .message-head h2{
+    font-size: 25px;
+  }
 }
 
 .message-wrapper {
-  background-color: rgb(229,247,250);
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  
+  .message-wrapper{
+    border:none;
+  }
 }
 
 .coment-zone{
@@ -374,14 +597,3 @@
   padding-top: 50px;
 }
 
-.message {
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
