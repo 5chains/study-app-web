@@ -1,6 +1,364 @@
-.vision-head{
-	background-color:red;
-	width: 100%;
-  height: 1600px;
-  text-align: center;
+.stead{
+	width:80%;
+	height:100%;
+	margin:0 10% 0% 10%;
 }
+
+.vision-start1{
+	text-align: center;
+	width:100%;
+	height:230px;
+}
+
+.syakai1{
+	font-size: 25px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif; 
+	padding-top: 120px;
+}
+
+.syakai2{
+	font-size:18px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+.vision-start2{
+	text-align: center;
+	width:100%;
+	height:150px;
+}
+
+@media (max-width: 500px) {
+  
+  .vision-start2{
+    height:300px;
+  }
+}
+
+.syakai3{
+	font-size: 30px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+@media (max-width: 500px) {
+  
+  .syakai3{
+    font-size: 25px;
+  }
+}
+
+.syakai4{
+	font-size: 16px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+.vision-main{
+	text-align: center;
+	width:100%;
+	height:650px;
+}
+
+@media (max-width: 1000px) {
+  
+  .vision-main{
+    height: 2000px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main{
+    height: 2500px;
+  }
+}
+
+.vision-main-area{
+	float:left;
+	width:336px;
+	height:650px;
+	margin:0% 0% 0% 0%;
+}
+
+@media (max-width: 1000px) {
+  
+  .vision-main-area{
+    width:100%;
+
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-area{
+    height: 750px;
+  }
+}
+
+
+.vision-main-point1{
+	width:336px;
+	height:250px;
+	background-image: url(rink.jpg);
+	background-size:cover;
+}
+
+@media (max-width: 1000px) {
+  
+  .vision-main-point1{
+    margin: 0px 230px 0px 230px;
+
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-point1{
+  	margin: 0px 1px 0px 1px;
+  }
+}
+
+.vision-main-point2{
+	width:336px;
+	height:250px;
+	background-image: url(rink4.jpg);
+	background-size:cover;
+}
+
+@media (max-width: 1000px) {
+  
+  .vision-main-point2{
+    margin: 0px 230px 0px 230px;
+
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-point1{
+  	margin: 0px 1px 0px 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-point2{
+  	margin: 0px;
+  }
+}
+
+.vision-main-point3{
+	width:336px;
+	height:250px;
+	background-image: url(rink8.jpg);
+	background-size:cover;
+}
+
+@media (max-width: 1000px) {
+  
+  .vision-main-point3{
+    margin: 0px 230px 0px 230px;
+
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-point3{
+  	margin: 0px;
+  }
+}
+
+.vision-main-word{
+	padding:30px 30px 5px 30px; 
+	line-height: 23px;
+	letter-spacing: 5px;
+	text-align: center;
+	width:336px;
+	height:400px;
+}
+
+@media (max-width: 1000px) {
+  
+  .vision-main-word{
+  	width:100%;
+    padding-top: 85px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-word{
+    height: 600px;
+  }
+}
+
+.syakai5{
+	font-size: 15px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+.syakai6{
+	font-size: 15px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+.syakai7{
+	font-size: 15px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+
+.syakai8{
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+.vision-main-voice1{
+	text-align: center;
+	width:100%;
+	height:120px;
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-voice1{
+  	height: 130px;
+  }
+}
+
+.syakai8{
+	font-size: 25px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+.syakai9{
+	font-size:18px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+.vision-main-voice2{
+	text-align: center;
+	width:100%;
+	height:200px;
+}
+
+@media (max-width: 500px) {
+  
+  .vision-main-voice2{
+  	height: 350px;
+  }
+}
+
+.syakai10{
+	font-size: 30px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+@media (max-width: 500px) {
+  
+  .syakai10{
+  	font-size: 25px;
+  }
+}
+
+.syakai11{
+	font-size: 16px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+@media (max-width: 500px) {
+  
+  .syakai11{
+  	font-size: 15px;
+  	padding-top: 35px;
+  }
+}
+
+.vision-port{
+	float:left; 
+	width:100%;
+	height:250px;
+}
+
+.vision-port-ima{
+	width:330px;
+	height:250px;
+	background-color:#B0E0E6; 
+	background-image: url(rink11.jpg);
+	background-size:cover;
+	margin:0px 345px 0px 345px;
+}
+
+@media (max-width: 1000px) {
+  
+  .vision-port-ima{
+    margin:0px 230px 0px 230px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .vision-port-ima{
+  	margin: 0px;
+  }
+}
+
+.vision-gold{
+	text-align: center;
+	width:100%;
+	height:550px;
+}
+
+.vision-gold-zzz{
+	float: left;
+	width:100%;
+	height: 400px;
+}
+
+.syakai12{
+	padding-top: 80px;
+	font-size:33px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+
+}
+
+@media (max-width: 500px) {
+  
+  .syakai12{
+  	font-size: 25px;
+  }
+}
+
+.syakai13{
+	padding-top: 40px;
+	font-size:32px;
+	font-family:"AvenirNext-Regular", "Lato", "AxisStd-Light", sans-serif;
+}
+
+@media (max-width: 500px) {
+  
+  .syakai13{
+  	font-size: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
